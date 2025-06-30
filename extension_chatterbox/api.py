@@ -176,6 +176,7 @@ def _tts_generator(
     cfg_weight=0.5,
     temperature=0.8,
     min_p=0.05,
+    repetition_penalty=1.2,
     audio_prompt_path=None,
     # model
     model_name="just_a_placeholder",
@@ -237,6 +238,7 @@ def _tts_generator(
                 cfg_weight=cfg_weight,
                 temperature=temperature,
                 min_p=min_p,
+                repetition_penalty=repetition_penalty,
                 # stream
                 # tokens_per_slice=tokens_per_slice,
                 # remove_milliseconds=remove_milliseconds,
