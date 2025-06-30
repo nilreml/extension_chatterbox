@@ -175,6 +175,7 @@ def _tts_generator(
     exaggeration=0.5,
     cfg_weight=0.5,
     temperature=0.8,
+    min_p=0.05,
     audio_prompt_path=None,
     # model
     model_name="just_a_placeholder",
@@ -235,6 +236,7 @@ def _tts_generator(
                 exaggeration=exaggeration,
                 cfg_weight=cfg_weight,
                 temperature=temperature,
+                min_p=min_p,
                 # stream
                 # tokens_per_slice=tokens_per_slice,
                 # remove_milliseconds=remove_milliseconds,
